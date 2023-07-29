@@ -13,8 +13,8 @@ export default async function CardTable() {
   console.log(data)
 
   return (
-    <div className='grid grid-cols-2 gap-4 lg:grid-cols-3'>
-      {data.data?.map((room) => (
+    <div className='grid grid-cols-2 gap-4 lg:grid-cols-1'>
+      {data.data?.map((room: any) => (
         <div
           key={room.id}
           className='relative flex items-center space-x-3 rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-400'
